@@ -1,6 +1,6 @@
 # switchboard
 
-Central index and status dashboard for our suite of zero-dependency, fluent TypeScript concurrency, resilience, and caching libraries.
+Central index and status dashboard for our suite of zero-dependency, fluent TypeScript and Crystal concurrency, resilience, and caching libraries.
 ## Typescript
 ### Libraries
 
@@ -126,12 +126,22 @@ const stats = await Pantry.key('dashboard:stats')
 
 ### Tooling & Standards
 
-Every library in this collection adheres to the same engineering standards:
+Every TypeScript library in this collection adheres to the same engineering standards:
 - **Zero runtime dependencies**
 - **Build**: Dual ESM + CJS + `.d.ts` bundles via [`tsdown`](https://github.com/rolldown/tsdown)
 - **Linting**: [`oxlint`](https://oxc.rs/docs/guide/usage/linter.html) with strict TypeScript & Vitest rules
 - **Testing**: [`vitest`](https://vitest.dev/) following [Even Better Specs](https://evenbetterspecs.github.io/) (`1` `expect` per `it`, no hooks, no `.each`, self-contained Arrange-Act-Assert)
 - **CI**: GitHub Actions running lint, type-check, test, and build on `main`
+
+## Crystal
+
+### Libraries
+
+| Library | Description | CI Status | Links |
+| :--- | :--- | :--- | :--- |
+| **[cr-semafor](https://github.com/Gwash3189/cr-semafor)** | Keyed semaphores for bounding concurrent work with acquisition wait and execution timeouts | [![CI](https://github.com/Gwash3189/cr-semafor/actions/workflows/ci.yml/badge.svg)](https://github.com/Gwash3189/cr-semafor/actions/workflows/ci.yml) | [GitHub](https://github.com/Gwash3189/cr-semafor) |
+| **[cr-doover](https://github.com/Gwash3189/cr-doover)** | Fluent retry policies with exponential, linear, constant, and immediate backoff, plus full jitter | [![CI](https://github.com/Gwash3189/cr-doover/actions/workflows/ci.yml/badge.svg)](https://github.com/Gwash3189/cr-doover/actions/workflows/ci.yml) | [GitHub](https://github.com/Gwash3189/cr-doover) |
+| **[cr-fusebox](https://github.com/Gwash3189/cr-fusebox)** | Declarative circuit breakers with failure thresholds, sliding windows, cooldowns, fallbacks, and lifecycle hooks | [![CI](https://github.com/Gwash3189/cr-fusebox/actions/workflows/ci.yml/badge.svg)](https://github.com/Gwash3189/cr-fusebox/actions/workflows/ci.yml) | [GitHub](https://github.com/Gwash3189/cr-fusebox) |
 
 ## License
 
