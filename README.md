@@ -1,8 +1,8 @@
 # switchboard
 
 Central index and status dashboard for our suite of zero-dependency, fluent TypeScript concurrency, resilience, and caching libraries.
-
-## Libraries
+## Typescript
+### Libraries
 
 | Library | Description | CI Status | npm | Links |
 | :--- | :--- | :--- | :--- | :--- |
@@ -15,7 +15,7 @@ Central index and status dashboard for our suite of zero-dependency, fluent Type
 
 ---
 
-## Quick Reference
+### Quick Reference
 
 ### 1. `@gwash3189/semafor` — Concurrency Bounding
 [![CI](https://github.com/Gwash3189/semafor/actions/workflows/ci.yml/badge.svg)](https://github.com/Gwash3189/semafor/actions/workflows/ci.yml) [![npm](https://img.shields.io/npm/v/@gwash3189/semafor.svg)](https://www.npmjs.com/package/@gwash3189/semafor)
@@ -124,7 +124,7 @@ const stats = await Pantry.key('dashboard:stats')
 
 ---
 
-## Tooling & Standards
+### Tooling & Standards
 
 Every library in this collection adheres to the same engineering standards:
 - **Zero runtime dependencies**
